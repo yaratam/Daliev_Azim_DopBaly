@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText"
+    android:background="@drawable/bg"
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/date"
+        android:textColor="@color/strong"
+        android:textSize="38sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="68.9dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/wed_dec_2021"
+        android:textColor="@color/light"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/qr"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/qr"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toEndOf="@+id/qr"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/Newarrival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/new_arrivals"
+        android:textColor="@color/strong"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <ImageButton
+        android:id="@+id/Bulgakov"
+        android:layout_width="130dp"
+        android:layout_height="197dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bulgakov"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Newarrival" />
+
+    <TextView
+        android:id="@+id/Rowling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/baskerville"
+        android:text="@string/joan_k_rowling"
+        android:textColor="@color/light"
+        android:textSize="@dimen/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Harry" />
+
+    <TextView
+        android:id="@+id/master"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/master"
+        android:textColor="@color/strong"
+        android:textSize="@dimen/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bulgakov" />
+
+    <TextView
+        android:id="@+id/mikhail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/baskerville"
+        android:text="@string/mikhail_a_bulgakov"
+        android:textColor="@color/light"
+        android:textSize="@dimen/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/master" />
+
+    <ImageButton
+        android:id="@+id/Potter"
+        android:layout_width="130dp"
+        android:layout_height="197dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/potter"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bestsellers" />
+
+    <TextView
+        android:id="@+id/Harry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/harry_potter"
+        android:textColor="@color/strong"
+        android:textSize="@dimen/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Potter" />
+
+    <ImageButton
+        android:id="@+id/Nabokov"
+        android:layout_width="130dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/nabokov"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toEndOf="@+id/Bulgakov"
+        app:layout_constraintTop_toBottomOf="@+id/Newarrival" />
+
+    <ImageButton
+        android:id="@+id/Marcus"
+        android:layout_width="130dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/marcus"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toEndOf="@+id/Potter"
+        app:layout_constraintTop_toBottomOf="@+id/Newarrival" />
+
+    <TextView
+        android:id="@+id/vladimir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/baskerville"
+        android:text="@string/vladimir_nabokov"
+        android:textColor="@color/light"
+        android:textSize="@dimen/name"
+        app:layout_constraintStart_toEndOf="@+id/mikhail"
+        app:layout_constraintTop_toBottomOf="@+id/Pale" />
+
+    <TextView
+        android:id="@+id/Aurelius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/baskerville"
+        android:text="@string/marcus_aurelius"
+        android:textColor="@color/light"
+        android:textSize="@dimen/name"
+        app:layout_constraintStart_toEndOf="@+id/Rowling"
+        app:layout_constraintTop_toBottomOf="@+id/Meditations" />
+
+    <TextView
+        android:id="@+id/Pale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/pale"
+        android:textColor="@color/strong"
+        android:textSize="@dimen/title"
+        app:layout_constraintStart_toEndOf="@+id/master"
+        app:layout_constraintTop_toBottomOf="@+id/Nabokov" />
+
+    <TextView
+        android:id="@+id/Meditations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/med"
+        android:textColor="@color/strong"
+        android:textSize="@dimen/title"
+        app:layout_constraintStart_toEndOf="@+id/master"
+        app:layout_constraintTop_toBottomOf="@+id/Marcus" />
+
+
+    <TextView
+        android:id="@+id/Bestsellers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/new_arrivals"
+        android:textColor="@color/strong"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/strong"
+        app:itemIconTint="@color/light"
+        app:itemTextColor="@color/light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

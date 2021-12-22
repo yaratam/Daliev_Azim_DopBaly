@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="book" type="id">book</item>
+    <item name="Pale" type="id">pale</item>
+    <item name="vladimir" type="id" />
+    <item name="stockload" type="id" />
+    <item name="stock" type="id" />
+    <item name="desc" type="id" />
+</resources>

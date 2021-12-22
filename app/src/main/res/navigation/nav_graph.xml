@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/triallFragment">
+
+    <fragment
+        android:id="@+id/triallFragment"
+        android:name="com.example.dopbaly.TriallFragment"
+        android:label="fragment_triall"
+        tools:layout="@layout/fragment_triall" >
+        <action
+            android:id="@+id/action_triallFragment_to_trialFragment2"
+            app:destination="@id/trialFragment2"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_triallFragment_to_trialFragment3"
+            app:destination="@id/trialFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/trialFragment2"
+        android:name="com.example.dopbaly.TrialFragment2"
+        android:label="fragment_trial2"
+        tools:layout="@layout/fragment_trial2" >
+        <action
+            android:id="@+id/action_trialFragment2_to_triallFragment"
+            app:destination="@id/triallFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/trialFragment3"
+        android:name="com.example.dopbaly.TrialFragment3"
+        android:label="fragment_trial3"
+        tools:layout="@layout/fragment_trial3" />
+</navigation>

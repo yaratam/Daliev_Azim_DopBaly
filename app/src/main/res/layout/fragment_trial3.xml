@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_search"
+    android:background="@color/strong">
+
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/search"
+        android:textColor="@color/white"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toStartOf="@+id/dots"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/strelka"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/strelka"
+        android:layout_width="21dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/strelkaw"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/dots"
+        android:layout_width="23dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/dotsw"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="301dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/searchbut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail"
+        android:contentDescription="@string/todo" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:background="@color/strong"
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

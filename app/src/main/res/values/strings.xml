@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">DopBaly</string>
+    <string name="date">22</string>
+    <string name="wed_dec_2021">DEC 2021</string>
+    <string name="todo">todo</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="master"><![CDATA[Master &…]]></string>
+    <string name="mikhail_a_bulgakov">Mikhail A. Bulgakov</string>
+    <string name="vladimir_nabokov">Vladimir Nabokov</string>
+    <string name="pale">Pale Fire</string>
+    <string name="harry_potter">Harry Potte…</string>
+    <string name="marcus_aurelius">Marcus Aurelius</string>
+    <string name="joan_k_rowling">Joan K. Rowling</string>
+    <string name="med">Meditations</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="library">library</string>
+    <string name="search">Search</string>
+    <string name="detail_book">Detail Book</string>
+    <string name="pale_fire">Pale Fire</string>
+    <string name="in_stock">In Stock</string>
+    <string name="desc">Ryan Gosling’s favourite book in BladeRunner 2049, great movie you should see it :)</string>
+    <string name="gert">Get Book</string>
+    <string name="search">Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_1">1</string>
 </resources>
