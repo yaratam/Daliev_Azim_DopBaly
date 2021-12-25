@@ -27,9 +27,10 @@
         android:layout_width="21dp"
         android:layout_height="21dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="43dp"
         android:background="@drawable/strelkaw"
         android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toStartOf="@+id/search"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,6 +43,7 @@
         android:background="@drawable/dotsw"
         android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/search"
         app:layout_constraintTop_toTopOf="parent" />
 
 
